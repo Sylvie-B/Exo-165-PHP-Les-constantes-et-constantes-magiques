@@ -13,12 +13,11 @@ $_a = 12;
 $_b = 2;
 echo $_a * $_b."<br>";
 $_Cool = "C'est cool PHP";
-echo ($_a + $_b) * strlen($_Cool);
+echo ($_a + $_b) * strlen($_Cool)."<br>";
 
 /**
  * 6. Utilisez la bonne constante magique et éventuellement la bonne fonction pour afficher un maximum d'informations sur la page actuelle4
  */
 // TODO Votre code ici.
-foreach ($_SERVER as $key => $value){
-    echo "<br>".$key." => ".$value."<br>";
-}
+echo "file : ".basename(__FILE__)."<br>";
+echo "dir : ".basename(__DIR__)."<br>";
